@@ -1,6 +1,6 @@
 FROM alpine:3.4
 
-RUN  apk add --no-cache --update --virtual=.build-group-1 curl bash postgresql-client jq python py-pip &&\
+RUN  apk add --no-cache --update --virtual=.build-group-1 curl bash postgresql-client jq python py-pip wget &&\
      apk add --no-cache --update --virtual=.git git &&\
      pip install --upgrade pip &&\
      pip install python-dateutil &&\
